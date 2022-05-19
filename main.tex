@@ -1,0 +1,318 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{placeins}
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+% \title{Human-robot Interaction}
+
+\title{Is a Robot Exercise Instructor More Engaging Than a Mobile Application Equivalent?}
+
+\author{\IEEEauthorblockN{ Hari Lakshman R.B}
+\IEEEauthorblockA{\textit{Department of Engineering Mathematics } \\
+\textit{University of Bristol and University of West of England}\\
+Bristol,United Kingdom \\
+harilakshmanrb@gmail.com}
+}
+
+
+\maketitle
+
+\begin{abstract}
+Robots are revolutionizing the world, it's undeniable and something people started to witness every day. From industrial robots to till assistive robots every application of robots will have one or the other way of interacting with the humans, it can be a user, it can be the developer, or even it can be the operator. Human-robot interaction research is something vital and should be addressed and revolutionized along with the technology, this study addresses the improvements in the interaction level from an application to that of an NAO robot. The same set of simple exercises and instructions were given to the participants of different demographics and age groups from the NAO robot and from a mobile application. The vital signs like a heartbeat, and the number of exercises attempted and completed were recorded. Also, a direct post-exercise survey was conducted to analyze the data and conclude the study. A common set of metrics that are used in evaluating the human-robot interaction were used to evaluate the study. With the results obtained, we could infer that more than 85\% of the participants preferred to have robot interaction and found it engaging, interesting, and motivating. More than 75\% of the participants repeated the exercise with the NAO robot but only 25\% of the participants repeated it with the mobile application.
+
+\begin{IEEEkeywords}
+NAO Robot, metrics, human-robot interaction
+\end{IEEEkeywords}
+
+\end{abstract}
+
+
+\section{Introduction}
+Interventions and improvements are being radically addressed and improved in rehabilitative therapy. There is a huge need for improvement and advancement in this field \cite{de2022efficacy}, The advanced techniques and technologies like Virtual Reality, Robotics, Artificial Intelligence is being tried using. It has been out from the research stage and currently with the help of government policies and people's mindset the technology has been successfully tested, evaluated, and being implemented \cite{aisen1997effect, whittaker2007rehabilitative, murray2006immersive}. Studies and experimentation have proved how efficient and effective the virtual reality (VR) technology has been \cite{errante2022effectiveness}. One of the branches of robotics is exoskeletons and assistive robots, which have proved to have high frequency and efficiency with rehabilitative programs \cite{mannella2022adaptations, feng2022dual}. Serious games have been created and experimented which that are intriguing, immersive, and effective in robot-assisted rehabilitation therapies for neurological patients \cite{pino2020humanoid}. \\
+
+With help of robots, there can be a lot more surveillance on the patient, repetition of tasks/exercises can be avoided by humans/caretakers and it can analyze more in-depth details of the vitals of the patient or of the user. Communication and interactions are the few factors that are holding back such kind of technology to be adapted in rehabilitation and in the health care industry. Improving the human-robot interaction, in this case, could bring more effective results, which was attempted and recorded in this study. The interaction and engagement levels between humans and robots and also between humans and smart apps were evaluated and analyzed which seems to have very interesting outcomes.
+
+
+\section{Related Work}
+
+Use of NAO robots are increasing in popularity owing to their capability to carry out tasks autonomously \cite{lytridis2018social, pino2020humanoid}. 
+
+% With growing potential, they are used in therapy for autistic children, coaching for exercise and activities, specialised education and assistance to elderly affected by dementia or brain injury \cite{lytridis2018social, pino2020humanoid}. 
+
+% Although NAO robots come with facial expression recognition (FER), use of convoluted neural networks along with FER has increased the efficiency of the software along with the upgrade of being able to recognise emotions based on facial expressions. This could have immense applications in rehabilitation sessions and in healthcare for the elderly where recognising emotions would be paramount \cite{filippini2021improving}. 
+
+% A key notion in perceiving emotions is through touch which has been achieved by using tactile sensors on NAO robots and thereby helps in better human robot interactions which will enable better communication especially with younger children who are autisitc \cite{andreasson2018affective}. 
+
+% Increasing research has been directed towards using NAO robots in the healthcare sector to attend to patients when they visit a clinic to take vital information and patient history \cite{sharif2017medical}. NAO robots can be used to assess and convey real-time medical information and efficiently engage with patients to obtain feedback. This automated system can be used to reduce pressure on medical workers and waiting time for patients and could virtually reduce unnecessary visits to GPs.  
+In relation to conducting exercise instruction, \cite{griffiths2021exercise} details an investigation of the role social robots can have in leading human participants. This primarily focused on the design of a digital questionnaire to determine the preferred role that users would want a robot to play in the interaction. This highlighted that users preferred the interface to take the role of a fitness coach as opposed to a companion. This aligns with our intent interaction and provides comparable representation to mobile fitness applications currently available in the user market (such as those listed in \cite{WinNT}), where the app instructs the desired exercise for the user to complete.
+
+%-------------------------
+\cite{9473863} addresses a similar scenario where low engagement in exercise is tackled using a socially assistive robot. This report utilizes the robot Pepper \cite{Pepperth22:online}, to encourage exercises specific to rehabilitation in-between sessions with trained physiotherapists. Overall, the results of this paper displayed an improvement in participant engagement. However, concerns regarding the novelty effect on long-term engagement, and combined active encouragement from the therapist may cause results in this report to have varying conclusions to this report.
+
+%-------------------------
+\cite{gockley2006encouraging} researches the effect of embodiment in the active encouragement of physical tasks. This included a pilot study where participants were asked to complete a task alongside a robot. The engagement of this task was measured through the number of repetitions, as well as having the participant fill in a survey upon completion. Although not strenuous tasks, such as exercise or using humanoid robots for encouragement, it did show an increase in engagement.
+
+%-------------------------
+\cite{anzalone2015evaluating} uses the NAO and Icub robot to collect data on engagement with instructive social interactions between humans and robots. It is stated that engagement can be measured through physiological variations such as heart rate. In addition, synchronous and asynchronous motions such as mimicry correspond to the non-verbal body language that humans use to communicate with each other. These can be used to infer the engagement of a person involved in social interaction with the robot through an analysis of these non-verbal cues. This study collects data through the tracking of body positioning and facial recognition. Although using different metrics for this report, the study found that there is a positive correlation between mimicry and engagement. Similar work is detailed in \cite{5326042}, where a health robot was trialed with a wide participant demographic and was found to evoke high levels of engagement from all user age groups. This was interpreted by the user's fulfillment and enjoyment through a questionnaire following participation in the exercise activity and compared to how the user perceived the robot prior to interaction. The research purpose was to compare methods of the user interface, looking at the touch and speech-based modes. Particular viability was shown with elderly participants where the novelty of robot interaction enhanced enjoyment by enabling participation with friends and family.
+
+
+%-------------------------
+
+\section{Methods}
+    As part of the user study, two sessions have been conducted to assess the engagement levels of the participants when interacting with a robot. In one of the sessions, participants were asked to complete a short exercise routine, with the use of a Softbank NAO robot to lead the interaction. For comparison, the other session had the participants conduct the same routine as completed with the robot, however, this time the interaction was led by a mobile application. 
+
+    \subsection{Hypothesis}
+        Prior to conducting user testing, the following hypothesis statement was posed:
+    
+        \begin{quote}
+          \textit{Looking at a demographic of casual exercisers, a robot instructor will gain better engagement during a workout routine compared to mobile application-based methods for casual exercises.}
+        \end{quote}
+    
+    \subsection{User Study Design}
+        % test with robot
+        As noted previously, the full user study was divided into two separate sections, with a different method of leading the exercise routine for each, and the order in which they were performed was selected randomly. Namely, one of the experiments employed the use of the NAO robot. In this interaction, the robot was programmed to lead a short, low-intensity workout which incorporated a total of 5 unique exercises that would iterate in the event that they were all completed. As the leader of the routine, the robot acts out each of the exercises, physically demonstrating to the participant the actions that are required. To conduct this section, the NAO robot was placed on a desk within an open teaching room, with sufficient space for the participant to complete the routine in front. 
+        
+        % test with app
+        The other section of the study involves the use of the interactive mobile application that has been the purpose build to this experiment. The app incorporates all the same exercises in the same order as used previously, but like many similar apps available, only demonstrates the movements through the use of images. For this section, the same test procedure as used with the robot was applied, with the only difference being that a laptop running the application was used in place of the robot. 
+        
+        % relating to both 
+        During both sections of the user study, the participants were requested to wear a smartwatch to record their heart rate for the duration of the tests. This has provided non-subjective data to contribute to finding overall engagement.
+        
+    
+    \subsection{User Study Procedure}
+        To begin the proceeding of the study, the participants were inducted with a short briefing to detail what they needed to do. This briefing involved the review of the pre-prepared information sheets detailing data collection and storage of personal information, concluding with the participants providing a signature for the consent of the study. Both sections of the overall interaction were then conducted, allowing sufficient time between them to allow the participant to rest, and for their heart rate to return to resting levels. With both sections completed, a short questionnaire was provided to collect the participant's feedback and opinions of the completed study. Finally, a short debrief was conducted to remind participants of their right to withdraw from the study. The diagram in Fig.\ref{fig:study_procedure} illustrates the study procedure described. 
+        
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=\linewidth]{study procedure.png}
+            \caption{Study Procedure Diagram}
+            \label{fig:study_procedure}
+        \end{figure}
+    
+    \subsection{Dependant Measures}
+    Engagement is very conceptual with no one objective measurement. Therefore, multiple dependent variables were required to grasp the level of engagement. The number of exercises attempted, exercises completed, and heart rate was recorded for each participant and study session. The number of exercises attempted would provide an indicator of how engaged the user was in the activity. The more engaged they were, the more exercises they would attempt. The number of exercises completed and heart rate also provided contextual data for this, as it provides insight into actual engagement or a shallow following of the program.\cite{gockley2006encouraging}
+    
+    Levels of fitness can vary significantly from person to person. Therefore, a dependent variable of this study was acquired from a questionnaire completed by participants. This questionnaire retrieved subjective data from answers in a scaled format, e.g. rating their own engagement from 1-5. We chose the questionnaire format as it is familiar and simple to answer for participants, and provides easily compilation for researchers. \cite{anzalone2015evaluating}
+
+
+    \subsection{Participants}
+    
+    The study was conducted on 15 robotics students, who have a previous understanding of the NAO robot and the subject of human-robot interaction. The participant from the course was recruited for the study during a practical teaching sessions. 
+    
+    Of the 15 study participants, ages ranged between 22 and 26 (shown in Fig.\ref{fig:Age Distribution}), and 6 identified as female and 9 as male. All participants were robotics students at the University of Bristol and had previous experience of interacting with the NAO robot. The participants were questioned on their technical familiarity with the NAO robot prior to the conducted exercise, this indicated an average rating of 4.7 (determined using the Likert psychometric scale with 1 being 'low technical familiarity' and 5 being 'high technical familiarity', this returned a standard deviation of 0.23) indicating the there to be high general familiarity across participants.  
+    
+    \begin{figure}[t]
+    \centering
+    \includegraphics[width=0.5\textwidth]{gender1.png}
+    \caption{Age and Gender Distribution}
+    \label{fig:Age Distribution}
+    \centering
+    \end{figure}
+
+% Intro to result: 
+\begin{figure*}[h!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{completed_exercises}
+  \caption{Number of exercises completed by the user}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{attempted_exercises}
+  \caption{Number of exercises attempted by the user}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{ \centering Participant exercise performance data. This highlights exercise routines lead by the NAO robot received higher user engagement. This is indicated by users completing and greater number of exercises and attempting a number of exercises. \centering}
+\label{fig:Exercise participation results}
+\end{figure*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results}
+
+
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.5\textwidth]{displot_heartrate}
+    \caption{\centering Kernel Density Estimate (KDE) plot of mean user heart rates, monitored with wearable smart watch during exercise routine. This indicates the peak KDE to be higher for exercises led by the NAO robot compared to exercises lead by the App.}
+    \label{fig:heartrates}
+    \centering
+\end{figure}
+
+% \\\\\\\\\\
+
+
+\subsection{Exercise data}
+
+The data recorded for the NAO and mobile application has been highlighted in fig. \ref{fig:Exercise participation results}. This indicates the difference in user engagement when participating in exercises led by the NAO robot, compared to the app lead exercises. Over the course of the user trials, it can be seen that users interacting with the robot completed more exercises and made greater attempts to finish the sets when they were not able to complete them in full.
+
+The \textbf{normaltest} \cite{scipy} library (from scipy.stats) was used to determine normality over the test variables monitored during the exercise routine (D’Agostino and Pearson’s test). This indicated there to be a high likelihood that the results came from a normal distribution for both exercise completion, attempts and heart rate variables (highlighted in table \ref{Tab:norm}). The level of statistical difference (detailed under table \ref{Tab:Tcr}) indicates changes of interface from robot to mobile application to have statistical difference in the exercises attempted and completed by the user.
+
+\begin{table}[]
+\renewcommand{\arraystretch}{1.2}
+\centering
+
+\captionof{table}{\centering The results returned from scipy.stats.normaltest (based on D’Agostino and Pearson’s test), this indicates all results sets to have normal distribution. This highlights the use of a t-test to be suitable in determining whether there is significant difference between results collected using the 2 interfaces.  \label{Tab:norm}}
+\begin{tabular}{ccccl}
+\cline{1-4}
+\multicolumn{1}{|c|}{Interface} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}exercises\\ attempted\end{tabular}} &
+  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}exercises\\ completed\end{tabular}} &
+  \multicolumn{1}{c|}{heart rate} &
+   \\ \cline{1-4}
+\multicolumn{1}{|c|}{NAO} & \multicolumn{1}{c|}{0.7} & \multicolumn{1}{c|}{0.3} & \multicolumn{1}{c|}{0.07} &  \\
+\multicolumn{1}{|c|}{App} & \multicolumn{1}{c|}{0.6} & \multicolumn{1}{c|}{0.9} & \multicolumn{1}{c|}{0.5}  &  \\ \cline{1-4}
+                          &                          &                          &                           & 
+\end{tabular}
+\centering
+\end{table}
+
+
+Due to there being normal distribution across the data presented, a t-test was used to indicate if the data showed statistical difference. This shows interaction with the NAO robot to have the largest effect on exercise attempts, indicated by a calculated Cohen's d value of 1.5. As such this highlights a change in user interface to affect how long the user chose to engage with the exercise. In turn, the calculated p-score of 0.0008 and a statistic value of 3.8, shows there to be statistical difference in the recorded data. As a result, use of these metrics to infer engagement can be taken to disprove the null-hypothesis.
+
+The user's heart rate (monitored using a wearable smartwatch) is detailed under Fig.\ref{fig:heartrates}. Comparing the peak result densities of the participant’s heart rates indicates that interaction with the NAO robot causes users to reach a higher average heart rate during the workout procedure, compared to interactions with the mobile app.
+
+
+\begin{table}[]
+\renewcommand{\arraystretch}{1.2}
+\centering
+
+\captionof{table}{\centering Inferred Statistics of data recorded by the NAO robot, mobile application and wearable heart rate monitor. A T-test was used to infer the statistic and p-score result. \label{Tab:Tcr}}
+\begin{tabular}{|c|c|c|c|l}
+\cline{1-4}
+Metric    & \begin{tabular}[c]{@{}c@{}}Exercises\\ attempted\end{tabular} & \begin{tabular}[c]{@{}c@{}}Exercises\\ completed\end{tabular} & Heart rate &  \\ \cline{1-4}
+p-score   & 0.0005                                                        & 0.0008                                                        & 0.07       &  \\ 
+Statistic & 3.8                                                           & 3.7                                                           & 1.9        &  \\ 
+Cohen's d & 1.5                                                           & 1.4                                                           & 0.7        &  \\ \cline{1-4}
+
+\end{tabular}
+\centering
+\end{table}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Post Exercise survey data}
+
+Participants were asked to complete a post-study questionnaire in which they provided scores for engagement, interaction, and instructional clarity of both the mobile application and the NAO robot, with the following results: 
+
+When asked about interaction with the robot, 8 out of 15 participants rated the interaction with the robot higher than 3 (where 1 being least interactive and 5 being most interactive) whereas for interaction with the mobile application, 10 participants voted less than 3 (as shown in Fig.\ref{fig:nao_robot}). This clearly states that Participants favored interaction with the robot as opposed to interaction with the mobile application.
+
+When comparing engagement with the NAO robot and the mobile application, 9 people gave the NAO robot a higher rating than 3, while 11 people gave the smartphone application rating lower than 3 (as shown in Fig.\ref{fig:mob_app}) (1 being least engaging and 5 being most engagement). As a result, working out with the NAO robot was found to be more fun than using the mobile app.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{interaction.png}
+    \caption{\centering Interaction Ratings with NAO Robot and Mobile application}
+    \label{fig:nao_robot}
+    \centering
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{engagement.png}
+    \caption{ \centering Engagement Ratings with NAO Robot and Mobile application}
+    \label{fig:mob_app}
+    \centering
+\end{figure}
+%need to add a leged here
+
+
+
+
+% \begin{figure}[h]
+  
+%     \includegraphics[width=0.41\textwidth]{nao_interaction.png}
+%     \caption{Familiarity With Nao}
+%     \label{fig:prior_nao}
+
+% \end{figure}
+
+
+
+
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{robot_engagement_ratings.png}
+%     \caption{Engagement with Nao Robot (add legend)}
+%     \label{fig:nao_robot_eng}
+%     \centering
+% \end{figure}
+
+
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{mobile_application_engagement.png}
+%     \caption{Engagement with Mobile application (add legend)}
+%     \label{fig:mob_app_eng}
+%     \centering
+% \end{figure}
+
+
+Out of 15 participants, 13 felt that workout with the NAO robot was fun and exciting, and 11 felt that the instruction had more clarity than the mobile application. 
+
+
+
+% \begin{figure}[h]
+    
+%     \includegraphics[width= 0.5\textwidth]{exciting_and_fun.png}
+%     \caption{Exciting chart (Change name)}
+%     \label{fig:exciting}
+    
+% \end{figure}
+
+
+
+\begin{figure}[h]
+   
+    \includegraphics[width=0.5\textwidth]{exec.png}
+    \caption{Positive Feedback of Engagement}
+    \label{fig:eng}
+
+\end{figure}
+
+
+The graph in Fig.\ref{fig:eng} shows that the NAO robot outperforms the mobile application in terms of instruction clarity, fun, and excitement. As a result, the NAO is perceived as the superior choice over the mobile app, as evidenced by the fact that 11 out of 15 participants chose to repeat the exercise with the robot, while only 4 chose to repeat it with the app.
+
+
+\section{Discussion}
+With the hypothesis stated, the study aimed to analyze the engagement levels between the participants who used a robot and an app with a smart wearable for performing a certain set of casual exercises. A participants of 15 people with slightly varying demographics of age and gender participated and performed the casual exercise with the NAO robot and as well as with the assistive smart app. An extensive and accurate amount of results of the participant's exercise attempted and completed with the app and with the robot has been collected, which helped to analyze the engagement level of the participants (table I and table II). Another batch of results that was recorded was the survey data which helped to analyze the interaction level and the user experience with the robot and app (Fig.5, Fig.6 and Fig.7). In order to evaluate the normal distribution in the data collected the t-test is suitable for determining the magnitude of difference between the two different interfaces used. We could infer from the metrics used to analyze the data presented in table II that the engagement with the NAO robot was higher than that of the mobile application. The cohen's d and p-score value can prove that participants tend to complete more exercises with the guidance from the NAO robot. This proved that statistically, the presence of assistive robots has a large impact in the interaction level. In order to obtain direct feedback a post-exercise survey was conducted which helped to prove our hypothesis, more than 50\% of participants rated 3 (out of 5) for the NAO guided experiment while more than 85\% pf the participants rated less than 3 (out of 5) for than mobile application based exercise. This survey again acted as a supporting pillar to prove our hypothesis. Though the results were satisfactory there are a few considerable factors that might affect the data and those are the limitations of this study as well. Since the participants were robotics students there is highly likely that they tend to prefer or interact more with the NAO robot-guided exercise. And to get more accurate data that can support our hypothesis are to conduct the same set of experiments with the people who regularly work out and with the people who need rehab and with people who have no prior exposure to such kind of technology-assisted session. 
+
+
+\section{Conclusions}
+This research study has proved that the people prefer and also they tend to pursue more exercise with the robot-assisted session. The interaction level seems to be higher and more effective to achieve the end goal of the session with NAO Fig.5. People prefer robots in the healthcare field has been increasing and it not can help people's physical health but it also helps with improving the mental health of the people, specifically, people will live alone would have a huge impact on their day to day life and health status. The interaction of people with robots should be improved in a lot of ways, it should be personalized, options to continue the interaction, checking out the comfort level and health status from time to time. All these factors have been addressed and implemented in this research. There are a few ethical factors like privacy, data leak and security have to need to be addressed when designing such a robot that directly engages with the humans. This study can help people research in a lot of other fields of human-robot interaction apart from the health industry. This experiment set-up and the metrics used can be repeated for more generic and focused participants which can yield more accurate and definitive data that supports the hypothesis. This study and results can act as a great motivation to improve more assistive robot development in the health and other robotics-related industry namely in education, farming and more \cite{heyer2010human, sheridan2016human, vasconez2019human, tekerek2009human}.
+
+
+\bibliographystyle{ieeetr} 
+\bibliography{refs}
+
+% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\FloatBarrier
+\clearpage
+\appendix
+\includepdf[pages=1]{Study docs/Consent form.pdf}
+\includepdf[pages=1-2]{Study docs/Ethical Review Checklist.pdf}
+\includepdf[pages=1-3]{Study docs/Information Sheet.pdf}
+\includepdf[pages=1-3]{Study docs/Privacy notice.pdf}
+
+
+\end{document}
